@@ -40,7 +40,7 @@ def red_function(file_path, output_file):
         sheet = workbook[sheet_name]
 
         for row_idx in range(1, sheet.max_row + 1):
-            for col_idx in range(1, sheet.max_column + 1):
+            for col_idx in range(2, sheet.max_column + 1):
                 cell_value = sheet.cell(row=row_idx, column=col_idx).value
                 if sheet.cell(row=1, column=col_idx).value not in White_Columns:
                     sheet.cell(row=row_idx, column=col_idx).fill = red_fill
