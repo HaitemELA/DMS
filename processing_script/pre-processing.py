@@ -8,10 +8,10 @@ import openpyxl
 from openpyxl.styles import PatternFill
 
 # Path of CSV files
-path = r'C:\Users\HaitemElAaouani\Downloads\RawProfiles'
+path = r'C:\Users\HaitemElAaouani\Documents\DMS\RawProfiles'
 
 # Define the columns to keep / rows to delete
-White_Columns = ['element_id','element_short_value','element_definition_value','element_cardinality','element_mustSupport_value']
+White_Columns = ['element_id','element_short_value','element_definition_value','element_cardinality','element_type_code_value', 'element_mustSupport_value']
 Red_Rows = ['id', 'extension','modifierExtension']
 
 # Temporary directory for temp CSVs
