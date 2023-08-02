@@ -11,8 +11,9 @@ from openpyxl.styles import PatternFill
 path = r'C:\Users\HaitemElAaouani\Documents\DMS\RawProfiles'
 
 # Define the columns to keep / rows to delete
-White_Columns = ['element_id','element_short_value','element_definition_value','element_cardinality','element_type_code_value', 'element_mustSupport_value']
-Red_Rows = ['id', 'extension','modifierExtension']
+White_Columns = ['element_id','element_short_value','element_definition_value','element_cardinality','element_type_code_value', 'element_mustSupport_value',
+                'element_binding_valueSetReference_reference_value']
+Red_Rows = ['identifier','display','id', 'extension', 'coding', 'system', 'version', 'code', 'userSelected', 'start', 'end', 'modifierExtension']
 
 # Temporary directory for temp CSVs
 tmp = os.path.join(path, 'tmp')
